@@ -35,7 +35,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build Angular app
-        run: npm install && npm run build -- --configuration production
+        run: npm install && npm run build -- --configuration production --base-href="/hub/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
